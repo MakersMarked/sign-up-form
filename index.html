@@ -10,8 +10,13 @@
 <body>
     
     <div class="container">
-        <div class="space"></div>
-        <div id="image-left"></div>
+        
+        <div id="image-left">
+            <div class="odin-logo">
+                <img src="./images/odin-lined.png" alt="Odin Logo" class="logo">
+                <h1>HEIRJORDAN5</Form></h1>
+            </div>
+        </div>
         <div class="content-right">
             <div class="info">
                <div class="header"> This is not a real online service! 
@@ -20,45 +25,51 @@
                 Sign up now to get started.<br><br>You know you want to.
                </div>
             </div>
+            
             <div class="sign-up-form">
-                <h2>Sign up today!</h2>
-                <form action="example.com/path" method="post">
-                    
-                    <div id="first-name"class="form-content">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" placeholder="Enter your First Name" name="first-name" required>
-                    </div>
-                    <div id="last-name"class="form-content">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" placeholder="Enter your Last Name" name="last-name" required>
-                    
-                    </div>
-                    <div id="user-email"class="form-content">
-                        <label for="user-email">Email:</label>
-                        <input type="email" id="user-email" placeholder="Enter your Email" name="user-email" required>
-                    </div>
-                    <div id="user-phone-number"class="form-content">
-                        <label for="user-phone-number">Phone Number:</label>
-                        <input type="tel" id="user-phone-number" placeholder="Enter your phone number" name="user-phone-number" required>
-                    </div>
-                    <div id="user-password"class="form-content">
-                        <label for="user-password">Password:</label>
-                        <input type="password" name="user-password" id="user-password" placeholder="Create a password" required>
-                    </div>
-                    <div id="confirm-user-password"class="form-content">
-                        <label for="confirm-user-password">Confirm Password:</label>
-                        <input type="password" name="confirm-user-password" id="confirm-user-password" placeholder="Confirm password" required>
-                    </div>
+                
+                    <form action="example.com/path" method="post">
+                        <h2>Sign up today!</h2>
+                        <section>
+                            <div id="first-name"class="form-content">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" placeholder="Enter your First Name" name="first-name" minlength="1" required>
+                            </div>
+                            <div id="last-name"class="form-content">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" placeholder="Enter your Last Name" name="last-name" required>
+                            
+                            </div>
+                            <div id="user-email"class="form-content">
+                                <label for="user-email">Email:</label>
+                                <input type="email" id="user-email" placeholder="email@domain.com" name="user-email" required>
+                            </div>
+                            <div id="user-phone-number"class="form-content">
+                                <label for="user-phone-number">Phone Number:</label>
+                                <input type="tel" id="user-phone-number" pattern="-\d{3}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" name="user-phone-number" required>
+                            </div>
+                            <div id="user-password"class="form-content">
+                                <label for="user-password">Password:</label>
+                                <input type="password" name="user-password" id="user-password" placeholder="minimum 7 characters" minlength="7" maxlength="15" required>
+                            </div>
+                            <div id="confirm-user-password"class="form-content">
+                                <label for="confirm-user-password">Confirm Password:</label>
+                                <input type="password" name="confirm-user-password" id="confirm-user-password" placeholder="minimum 7 characters" minlength="7" maxlength="15" required>
+                            </div>
+                        </section>
+                    </form>
+                
+                
             </div>
             <div class="bottom-body">
                 <button type="submit">Create Account</button>
                 <div id="current-user">Already have an account? <a href="index.html">Sign in!</a> </div>
             </div>
             
-            </form>
+            
             
         </div>
-        <div class="space"></div>
+        
     </div>
 
 </body>
